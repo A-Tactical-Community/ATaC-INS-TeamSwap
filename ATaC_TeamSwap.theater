@@ -246,7 +246,7 @@
 			"models"
 			{
         			"player"                "models/characters/insurgency_sapper.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_h.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_ins_h.mdl"
     			}
 			"team"			"security"
     			"print_name"		"Sapper"
@@ -273,6 +273,36 @@
         			"weapon"		"weapon_kabar"
         			"gear"			"sec_chest_carrier"
         			"gear"			"sec_chest_rig"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
+		"template_recon"
+		{
+			"models"
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_h.mdl"
+    			}
+			"team"			"security"
+    			"print_name"		"Sapper"
+    			"buy_order"
+    			{
+				"weapon"    "weapon_marinebayonet"
+    			}
+    			"allowed_items"    
+    			{
+
 			}
     			"cost_modifiers"    
     			{
