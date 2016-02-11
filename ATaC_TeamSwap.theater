@@ -159,12 +159,6 @@
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
-        			"weapon"    "weapon_m590"
-        			"weapon_upgrade"    "optic_eotech"
-				"weapon"    "weapon_m45"
-        			"weapon"    "weapon_m67"
-        			"gear"	    "sec_heavy_armor"
-        			"gear"	    "sec_chest_rig"
     			}
     			"allowed_items"    
     			{
@@ -212,12 +206,6 @@
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
-        			"weapon"    "weapon_m590"
-        			"weapon_upgrade"    "optic_eotech"
-				"weapon"    "weapon_m45"
-        			"weapon"    "weapon_m67"
-        			"gear"	    "sec_heavy_armor"
-        			"gear"	    "sec_chest_rig"
     			}
     			"allowed_items"    
     			{
@@ -265,12 +253,6 @@
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
-        			"weapon"    "weapon_m590"
-        			"weapon_upgrade"    "optic_eotech"
-				"weapon"    "weapon_m45"
-        			"weapon"    "weapon_m67"
-        			"gear"	    "sec_heavy_armor"
-        			"gear"	    "sec_chest_rig"
     			}
     			"allowed_items"    
     			{
