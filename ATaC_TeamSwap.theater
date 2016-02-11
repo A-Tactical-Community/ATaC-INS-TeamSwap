@@ -6,30 +6,27 @@
 	{
 		"security"
 		{
-		  "name"          "Insurgents"
-		  "logo"          "gameui/fac_ins"
+		  	"name"          "Insurgents"
+		  	"logo"          "gameui/fac_ins"
 			"squads"
 			{
 				"Cell Shazar"
 				{
-				"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"
-				"#Squad_Cell_Fighter"			"template_coop_fighter"
-				"#Squad_Cell_Fighter"			"template_coop_fighter"	
-				"#Squad_Cell_MachineGunner"		"template_coop_machinegunner"
-				"#Squad_Cell_Sapper"			"template_coop_sapper"
+				"Leader"				"temp_leader"
+				"Fighter"				"temp_fighter"
+				"Fighter"				"temp_fighter"	
+				"Machine Gunner"			"temp_machinegunner"
+				"Sapper"				"temp_sapper"
 				}
-			//"cost_modifiers"
-			//{
-			//}
 			}
 		}
 		"insurgents"
 		{
-		  "name"          "Security"
-		  "logo"          "gameui/fac_sec"
-		  "squads"
-		  {
-		    "Fireteam Alpha"	// small arms
+		  	"name"          "Security"
+		  	"logo"          "gameui/fac_sec"
+		  	"squads"
+		  	{
+		    	"Fireteam Alpha"	// small arms
 				{
 					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
 					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
@@ -62,9 +59,222 @@
 					"#Squad_Fireteam_Support"			"template_support_security_coop"
 					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
 				}
-		  }
+		  	}
 		}
 	}
-	   }
+	"player_templates"
+	{
+		"temp_leader"
+		{
+			"models"  //This subsection defines the player model
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+    			}
+			"team"			"security"
+    			"print_name"	"Recon"
+    			"buy_order"
+    			{
+				"weapon"    "weapon_kabar"
+        			"weapon"    "weapon_m590"
+        			"weapon_upgrade"    "optic_eotech"
+				"weapon"    "weapon_m45"
+        			"weapon"    "weapon_m67"
+        			"gear"	    "sec_heavy_armor"
+        			"gear"	    "sec_chest_rig"
+    			}
+    			"allowed_items"    
+    			{
+	        		"weapon"		"weapon_m590"
+        			"weapon"		"weapon_m16a4"			
+        			"weapon"		"weapon_m14"
+        			"weapon"		"weapon_m4a1"
+
+	   			"weapon"		"weapon_m45"
+        			"weapon"		"weapon_m9"
+        			"weapon"		"weapon_makarov"
+
+	        		"weapon"		"weapon_m67"
+        			"weapon"		"weapon_m18"
+        			"weapon"		"weapon_anm14"
+        			"weapon"		"weapon_m84"
+
+        			"weapon"		"weapon_kabar"
+        			"gear"			"sec_chest_carrier"
+        			"gear"			"sec_chest_rig"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
+		"temp_fighter"
+		
+		{
+			"models"  //This subsection defines the player model
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+    			}
+			"team"			"security"
+    			"print_name"	"Recon"
+    			"buy_order"
+    			{
+				"weapon"    "weapon_kabar"
+        			"weapon"    "weapon_m590"
+        			"weapon_upgrade"    "optic_eotech"
+				"weapon"    "weapon_m45"
+        			"weapon"    "weapon_m67"
+        			"gear"	    "sec_heavy_armor"
+        			"gear"	    "sec_chest_rig"
+    			}
+    			"allowed_items"    
+    			{
+	        		"weapon"		"weapon_m590"
+        			"weapon"		"weapon_m16a4"			
+        			"weapon"		"weapon_m14"
+        			"weapon"		"weapon_m4a1"
+
+	   			"weapon"		"weapon_m45"
+        			"weapon"		"weapon_m9"
+        			"weapon"		"weapon_makarov"
+
+	        		"weapon"		"weapon_m67"
+        			"weapon"		"weapon_m18"
+        			"weapon"		"weapon_anm14"
+        			"weapon"		"weapon_m84"
+
+        			"weapon"		"weapon_kabar"
+        			"gear"			"sec_chest_carrier"
+        			"gear"			"sec_chest_rig"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
+		
+		"temp_machinegunner"
+		{
+			"models"  //This subsection defines the player model
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+    			}
+			"team"			"security"
+    			"print_name"	"Recon"
+    			"buy_order"
+    			{
+				"weapon"    "weapon_kabar"
+        			"weapon"    "weapon_m590"
+        			"weapon_upgrade"    "optic_eotech"
+				"weapon"    "weapon_m45"
+        			"weapon"    "weapon_m67"
+        			"gear"	    "sec_heavy_armor"
+        			"gear"	    "sec_chest_rig"
+    			}
+    			"allowed_items"    
+    			{
+	        		"weapon"		"weapon_m590"
+        			"weapon"		"weapon_m16a4"			
+        			"weapon"		"weapon_m14"
+        			"weapon"		"weapon_m4a1"
+
+	   			"weapon"		"weapon_m45"
+        			"weapon"		"weapon_m9"
+        			"weapon"		"weapon_makarov"
+
+	        		"weapon"		"weapon_m67"
+        			"weapon"		"weapon_m18"
+        			"weapon"		"weapon_anm14"
+        			"weapon"		"weapon_m84"
+
+        			"weapon"		"weapon_kabar"
+        			"gear"			"sec_chest_carrier"
+        			"gear"			"sec_chest_rig"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
+		
+		"temp_sapper"
+		{
+			"models"  //This subsection defines the player model
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+    			}
+			"team"			"security"
+    			"print_name"	"Recon"
+    			"buy_order"
+    			{
+				"weapon"    "weapon_kabar"
+        			"weapon"    "weapon_m590"
+        			"weapon_upgrade"    "optic_eotech"
+				"weapon"    "weapon_m45"
+        			"weapon"    "weapon_m67"
+        			"gear"	    "sec_heavy_armor"
+        			"gear"	    "sec_chest_rig"
+    			}
+    			"allowed_items"    
+    			{
+	        		"weapon"		"weapon_m590"
+        			"weapon"		"weapon_m16a4"			
+        			"weapon"		"weapon_m14"
+        			"weapon"		"weapon_m4a1"
+
+	   			"weapon"		"weapon_m45"
+        			"weapon"		"weapon_m9"
+        			"weapon"		"weapon_makarov"
+
+	        		"weapon"		"weapon_m67"
+        			"weapon"		"weapon_m18"
+        			"weapon"		"weapon_anm14"
+        			"weapon"		"weapon_m84"
+
+        			"weapon"		"weapon_kabar"
+        			"gear"			"sec_chest_carrier"
+        			"gear"			"sec_chest_rig"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
 	}
 }
+
