@@ -2,6 +2,25 @@
 
 "theater"
 {
+	"core"
+	{
+		"precache"
+		{
+			// default theater specific sounds
+			"sounds"			"scripts/ins_sounds_weapons.txt"
+			"sounds"			"scripts/ins_sounds_cues.txt"
+			"sounds"			"scripts/ins_sounds_voice.txt"
+			"sounds"			"scripts/ins_sounds_radial_security.txt"				
+			"sounds"			"scripts/ins_sounds_radial_insurgent.txt"				
+			"sounds"			"scripts/ins_sounds_responses_security.txt"
+			"sounds"			"scripts/ins_sounds_responses_insurgent.txt"
+			"sounds"			"scripts/ins_sounds_hq.txt"
+			
+			// coop specific
+			"sounds"			"scripts/ins_sounds_voice_coop.txt"
+		}
+	}
+	
 	"teams"
 	{
 		"security"
@@ -26,38 +45,49 @@
 		  	"logo"          "gameui/fac_sec"
 		  	"squads"
 		  	{
-		    	"Fireteam Alpha"	// small arms
+		    	"Fireteam Alpha"
 				{
-					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
-					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
-					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
-					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
-					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
-					"#Squad_Fireteam_Support"			"template_support_security_coop"
-					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+					"Leader (Recon)"		"template_recon"
+					"Specialist"			"template_specialist"
+					"Specialist"			"template_specialist"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Marksman"			"template_dm"
+					"Support"			"template_support"
 				}
-				"Fireteam Bravo"	// small arms
+				"Fireteam Bravo"
 				{
-					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
-					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
-					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
-					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
-					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
-					"#Squad_Fireteam_Support"			"template_support_security_coop"
-					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+					"Leader (Recon)"		"template_recon"
+					"Specialist"			"template_specialist"
+					"Specialist"			"template_specialist"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Marksman"			"template_dm"
+					"Support"			"template_support"
 				}
-				"Fireteam Charlie"	// small arms
+				"Fireteam Charlie"
 				{
-					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
-					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
-					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
-					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
-					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
-					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
-					"#Squad_Fireteam_Support"			"template_support_security_coop"
-					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+					"Leader (Recon)"		"template_recon"
+					"Specialist"			"template_specialist"
+					"Specialist"			"template_specialist"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Marksman"			"template_dm"
+					"Support"			"template_support"
+				}
+				"Fireteam Delta"
+				{
+					"Leader (Recon)"		"template_recon"
+					"Specialist"			"template_specialist"
+					"Specialist"			"template_specialist"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Rifleman"			"template_rifle"
+					"Marksman"			"template_dm"
+					"Support"			"template_support"
 				}
 		  	}
 		}
@@ -66,13 +96,13 @@
 	{
 		"temp_leader"
 		{
-			"models"  //This subsection defines the player model
+			"models"
 			{
-        			"player"                "models/characters/security_specialist.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+        			"player"                "models/characters/insurgency_light.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_ins_l.mdl"
     			}
 			"team"			"security"
-    			"print_name"	"Recon"
+    			"print_name"	"Leader"
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
@@ -119,13 +149,13 @@
 		"temp_fighter"
 		
 		{
-			"models"  //This subsection defines the player model
+			"models"
 			{
-        			"player"                "models/characters/security_specialist.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+        			"player"                "models/characters/insurgency_fighter.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_ins_m.mdl"
     			}
 			"team"			"security"
-    			"print_name"	"Recon"
+    			"print_name"		"Fighter"
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
@@ -172,13 +202,13 @@
 		
 		"temp_machinegunner"
 		{
-			"models"  //This subsection defines the player model
+			"models"
 			{
-        			"player"                "models/characters/security_specialist.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+        			"player"                "models/characters/insurgency_machinegunner.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_ins_h.mdl"
     			}
 			"team"			"security"
-    			"print_name"	"Recon"
+    			"print_name"		"Machine Gunner"
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
@@ -225,13 +255,13 @@
 		
 		"temp_sapper"
 		{
-			"models"  //This subsection defines the player model
+			"models"
 			{
-        			"player"                "models/characters/security_specialist.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_l.mdl"
+        			"player"                "models/characters/insurgency_sapper.mdl"
+        			"viewmodel_hands"     "models/weapons/v_hands_sec_h.mdl"
     			}
 			"team"			"security"
-    			"print_name"	"Recon"
+    			"print_name"		"Sapper"
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
