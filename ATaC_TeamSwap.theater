@@ -1,1 +1,70 @@
+"#base" "default.theater"
 
+"theater"
+{
+	"teams"
+	{
+		"security"
+		{
+		  "name"          "Insurgents"
+		  "logo"          "gameui/fac_ins"
+			"squads"
+			{
+				"Cell Shazar"
+				{
+				"#Squad_Cell_Leader_Specialist"		"template_coop_specialist"
+				"#Squad_Cell_Fighter"			"template_coop_fighter"
+				"#Squad_Cell_Fighter"			"template_coop_fighter"	
+				"#Squad_Cell_MachineGunner"		"template_coop_machinegunner"
+				"#Squad_Cell_Sapper"			"template_coop_sapper"
+				}
+			//"cost_modifiers"
+			//{
+			//}
+			}
+		}
+		"insurgents"
+		{
+		  "name"          "Security"
+		  "logo"          "gameui/fac_sec"
+		  "squads"
+		  {
+		    "Fireteam Alpha"	// small arms
+				{
+					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
+					"#Squad_Fireteam_Support"			"template_support_security_coop"
+					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+				}
+				"Fireteam Bravo"	// small arms
+				{
+					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
+					"#Squad_Fireteam_Support"			"template_support_security_coop"
+					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+				}
+				"Fireteam Charlie"	// small arms
+				{
+					"#Squad_Fireteam_Leader_Recon"		"template_recon_security_coop"
+					"#Squad_Fireteam_Specialist"		"template_specialist_security_coop"
+					"#Squad_Fireteam_Rifleman"			"template_rifleman_security_coop"
+					"#Squad_Fireteam_Breacher"			"template_breacher_security_coop"
+					"#Squad_Fireteam_Demolitions"		"template_demolitions_security_coop"
+					"#Squad_Fireteam_Designated_Marksman"	"template_designated_marksman_security_coop"
+					"#Squad_Fireteam_Support"			"template_support_security_coop"
+					"#Squad_Fireteam_Sniper"			"template_sniper_security_coop"
+				}
+		  }
+		}
+	}
+	   }
+	}
+}
