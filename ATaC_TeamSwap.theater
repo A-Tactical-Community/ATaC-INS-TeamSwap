@@ -100,9 +100,17 @@
 			{
         			"player"                "models/characters/insurgency_light.mdl"
         			"viewmodel_hands"     "models/weapons/v_hands_ins_l.mdl"
+        			
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
     			}
 			"team"			"security"
-    			"print_name"	"Leader"
+    			"print_name"		"Leader"
     			"buy_order"
     			{
 				"weapon"    "weapon_kabar"
@@ -153,6 +161,13 @@
 			{
         			"player"                "models/characters/insurgency_fighter.mdl"
         			"viewmodel_hands"     "models/weapons/v_hands_ins_m.mdl"
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/ins_helmet.mdl"
+					}
+				}
     			}
 			"team"			"security"
     			"print_name"		"Fighter"
@@ -200,6 +215,13 @@
 			{
         			"player"                "models/characters/insurgency_machinegunner.mdl"
         			"viewmodel_hands"     "models/weapons/v_hands_ins_h.mdl"
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/ins_helmet.mdl"
+					}
+				}
     			}
 			"team"			"security"
     			"print_name"		"Machine Gunner"
@@ -246,7 +268,14 @@
 			"models"
 			{
         			"player"                "models/characters/insurgency_sapper.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_ins_h.mdl"
+        			"viewmodel_hands"     	"models/weapons/v_hands_ins_h.mdl"
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/ins_helmet_head.mdl"
+					}
+				}
     			}
 			"team"			"security"
     			"print_name"		"Sapper"
@@ -292,13 +321,21 @@
 			"models"
 			{
         			"player"                "models/characters/security_specialist.mdl"
-        			"viewmodel_hands"     "models/weapons/v_hands_sec_h.mdl"
+        			"viewmodel_hands"     	"models/weapons/v_hands_sec_h.mdl"
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+					}
+				}
     			}
 			"team"			"security"
     			"print_name"		"Sapper"
     			"buy_order"
     			{
-				"weapon"    "weapon_marinebayonet"
+				"weapon"    	"weapon_marinebayonet"
+				"weapon"	"weapon_m4a1"
     			}
     			"allowed_items"    
     			{
