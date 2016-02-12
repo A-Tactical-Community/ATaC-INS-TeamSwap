@@ -339,7 +339,46 @@
     			}
     			"allowed_items"    
     			{
-
+				"weapon"    	"weapon_marinebayonet"
+				"weapon"	"weapon_m4a1"
+			}
+    			"cost_modifiers"    
+    			{
+        			"weapon"    
+        			{
+        				    "weapon_m4a1"    "1"    
+         			}
+        			"weapon_upgrade"    
+        			{
+            				"optic_2xaimpoint_sec"    "-1"    
+            				"sec_silencer"    "-1"    
+         			}
+    			}
+		}
+		"template_specialist"
+		{
+			"models"
+			{
+        			"player"                "models/characters/security_specialist.mdl"
+        			"viewmodel_hands"     	"models/weapons/v_hands_sec_h.mdl"
+        			"attachments"
+				{
+					"cap"
+					{
+						"model"			"models/characters/us_cap_light.mdl"
+					}
+				}
+    			}
+			"team"			"security"
+    			"print_name"		"Sapper"
+    			"buy_order"
+    			{
+				"weapon"    	"weapon_marinebayonet"
+    			}
+    			"allowed_items"    
+    			{
+				"weapon"    	"weapon_marinebayonet"
+				"weapon"	"weapon_m4a1"
 			}
     			"cost_modifiers"    
     			{
